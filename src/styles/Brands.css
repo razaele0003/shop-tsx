@@ -1,0 +1,109 @@
+.brands-section {
+  width: 100%;
+  background-color: var(--color-black, #000000);
+  height: 122px;
+  display: flex;
+  align-items: center;
+}
+
+.brands-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media (min-width: 1600px) {
+  .brands-section {
+    height: 140px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .brands-section {
+    height: 150px;
+  }
+}
+
+.brand-logo {
+  object-fit: contain;
+}
+
+.brand-versace {
+  width: 167px;
+  height: 33px;
+}
+
+.brand-zara {
+  width: 91px;
+  height: 38px;
+}
+
+.brand-gucci {
+  width: 156px;
+  height: 36px;
+}
+
+.brand-prada {
+  width: 194px;
+  height: 32px;
+}
+
+.brand-calvin-klein {
+  width: 207px;
+  height: 33px;
+}
+
+/* Tablet / Smaller Desktop */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .brands-section {
+    height: auto;
+    padding: 30px 0;
+  }
+  .brands-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .brands-section {
+    height: 146px;
+  }
+
+  .brands-container {
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px 34px;
+    padding: 0 16px;
+  }
+
+  .brand-versace {
+    width: 117px;
+    height: 23px;
+  }
+
+  .brand-zara {
+    width: 64px;
+    height: 27px;
+  }
+
+  .brand-gucci {
+    width: 109px;
+    height: 25px;
+  }
+
+  .brand-prada {
+    width: 127px;
+    height: 21px;
+  }
+
+  .brand-calvin-klein {
+    width: 135px;
+    height: 22px;
+  }
+}

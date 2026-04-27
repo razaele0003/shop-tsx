@@ -1,0 +1,116 @@
+.new-arrivals-section {
+  width: 100%;
+  padding-top: 72px;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 1600px) {
+  .new-arrivals-section {
+    padding-top: 88px;
+  }
+  .product-grid {
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .new-arrivals-section {
+    padding-top: 100px;
+  }
+  .product-grid {
+    gap: 32px;
+  }
+}
+
+.section-title {
+  font-family: 'Integral CF', 'Poppins', 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 55px 0;
+  text-transform: uppercase;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.btn-view-all {
+  width: 218px;
+  height: 52px;
+  border-radius: 62px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-view-all:hover {
+  background-color: #F0F0F0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .new-arrivals-section {
+    padding-top: 50px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 32px 0;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 0 16px;
+    scrollbar-width: none;
+  }
+  
+  .product-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .view-all-container {
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .btn-view-all {
+    width: 100%;
+  }
+}

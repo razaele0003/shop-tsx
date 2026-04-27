@@ -1,0 +1,185 @@
+.dress-style-section {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.dress-style-wrapper {
+  width: 100%;
+  max-width: 1239px;
+  margin-inline: auto;
+  padding: 70px 64px 76px;
+  background-color: #F0F0F0;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dress-style-title {
+  width: 100%;
+  margin: 0 0 64px;
+  font-family: 'Integral CF', 'Poppins', 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.dress-style-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-row {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.style-card {
+  position: relative;
+  height: 289px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  min-width: 0;
+}
+
+.card-casual,
+.card-gym {
+  flex: 407 1 0;
+}
+
+.card-formal,
+.card-party {
+  flex: 684 1 0;
+}
+
+.style-label {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  z-index: 2;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.style-image {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card-casual .style-image {
+  left: -85.26%;
+  top: -42.21%;
+  width: 239.07%;
+  height: 224.57%;
+  transform: scaleX(-1);
+}
+
+.card-formal .style-image {
+  left: 0;
+  top: -50.52%;
+  width: 190.94%;
+  height: 301.04%;
+}
+
+.card-party .style-image {
+  left: 6.14%;
+  top: -56.40%;
+  width: 112.57%;
+  height: 213.15%;
+}
+
+.card-gym .style-image {
+  left: 13.02%;
+  top: -51.21%;
+  width: 111.06%;
+  height: 234.26%;
+}
+
+@media (max-width: 768px) {
+  .dress-style-section {
+    padding-bottom: 40px;
+  }
+
+  .dress-style-wrapper {
+    padding: 40px 24px 27px;
+    border-radius: 20px;
+  }
+
+  .dress-style-title {
+    max-width: 246px;
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .dress-style-grid {
+    gap: 16px;
+  }
+
+  .grid-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .style-card,
+  .card-casual,
+  .card-formal,
+  .card-party,
+  .card-gym {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .style-card {
+    height: 190px;
+  }
+
+  .style-label {
+    top: 16px;
+    left: 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card-casual .style-image {
+    left: -55.16%;
+    top: -39.47%;
+    width: 184.52%;
+    height: 201.58%;
+  }
+
+  .card-formal .style-image {
+    left: -5.48%;
+    top: -46.32%;
+    width: 228.71%;
+    height: 248.42%;
+  }
+
+  .card-party .style-image {
+    left: 0;
+    top: -43.16%;
+    width: 125.48%;
+    height: 163.68%;
+  }
+
+  .card-gym .style-image {
+    left: 22.58%;
+    top: -47.37%;
+    width: 91.94%;
+    height: 223.68%;
+  }
+}

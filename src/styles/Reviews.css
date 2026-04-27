@@ -1,0 +1,264 @@
+.reviews-section {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FFFFFF;
+}
+
+.reviews-container {
+  width: min(100% - 32px, 1240px);
+  margin-inline: auto;
+  overflow: visible;
+}
+
+.reviews-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.reviews-title {
+  font-family: 'Integral CF', 'Poppins', 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 700;
+  font-size: clamp(40px, 3.4vw, 48px);
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.reviews-navigation {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-arrow {
+  width: 40px;
+  height: 40px;
+  background: #F0F0F0;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms ease;
+}
+
+.nav-arrow:hover {
+  background: #E0E0E0;
+}
+
+.nav-arrow:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+
+.arrow-prev-icon {
+  transform: rotate(90deg);
+  width: 24px;
+  height: 24px;
+}
+
+.arrow-next-icon {
+  transform: rotate(-90deg);
+  width: 24px;
+  height: 24px;
+}
+
+.reviews-carousel-shell {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  overflow: hidden;
+  contain: paint;
+}
+
+.reviews-viewport {
+  width: 100%;
+  overflow: hidden;
+  contain: paint;
+}
+
+.reviews-track {
+  display: flex;
+  align-items: stretch;
+  gap: var(--review-card-gap, 20px);
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.review-card {
+  flex: 0 0 var(--review-card-width, 400px);
+  width: var(--review-card-width, 400px);
+  min-height: 240px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 28px 32px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+  opacity: 0.38;
+  filter: blur(2px);
+  transform: scale(0.96);
+  transform-origin: center;
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease,
+    transform 0.3s ease;
+  will-change: opacity, filter, transform;
+}
+
+.review-card.is-active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.review-card.is-side {
+  opacity: 0.6;
+  filter: blur(2px);
+  transform: scale(0.98);
+}
+
+.review-stars {
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.author-name {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.verified-icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+}
+
+.review-text {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+@media (min-width: 1440px) {
+  .reviews-container {
+    width: 1240px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .reviews-container {
+    width: calc(100% - 40px);
+  }
+
+  .review-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .reviews-header {
+    margin-bottom: 28px;
+  }
+
+  .reviews-title {
+    font-size: clamp(34px, 5vw, 40px);
+    line-height: 1.12;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .reviews-container,
+  .reviews-carousel-shell {
+    width: calc(100% - 32px);
+  }
+
+  .reviews-header {
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .reviews-navigation {
+    gap: 8px;
+  }
+
+  .nav-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .review-card,
+  .review-card.is-active,
+  .review-card.is-side {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+
+  .review-card {
+    min-height: 186px;
+    padding: 24px;
+    gap: 12px;
+  }
+
+  .review-stars svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .author-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .verified-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-track,
+  .review-card {
+    transition: none;
+  }
+}

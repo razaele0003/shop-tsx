@@ -1,0 +1,124 @@
+/* Newsletter Section */
+.newsletter-section {
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-box {
+  background-color: #000000;
+  border-radius: 40px;
+  padding: 36px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.newsletter-title {
+  font-family: 'Integral CF', 'Poppins', 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #FFFFFF;
+  max-width: 551px;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 349px;
+  flex: 0 0 349px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px;
+}
+
+.mail-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.newsletter-input {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 62px;
+  padding-left: 52px;
+  padding-right: 16px;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.newsletter-btn {
+  width: 100%;
+  height: 46px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 62px;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #F0F0F0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .newsletter-section {
+    margin-top: 50px;
+  }
+
+  .newsletter-box {
+    border-radius: 20px;
+    padding: 32px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .newsletter-title {
+    font-size: 36px;
+    line-height: 35px;
+    max-width: 100%;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    flex: auto;
+  }
+
+  .input-wrapper, .newsletter-btn {
+    height: 42px;
+  }
+
+  .newsletter-input {
+    font-size: 14px;
+  }
+}
