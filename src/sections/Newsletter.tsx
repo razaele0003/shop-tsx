@@ -7,7 +7,7 @@ const Newsletter: React.FC = () => {
     <section className="newsletter-section">
       <div className="container">
         <div className="newsletter-box">
-          <h2 className="newsletter-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+          <h2 className="newsletter-title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
           <div className="newsletter-form">
             <div className="input-wrapper">
               <img src={mailIcon} alt="Email" className="mail-icon" />
