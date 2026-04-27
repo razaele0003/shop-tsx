@@ -73,12 +73,25 @@
   transform: translateY(-2px);
 }
 
+.social-icon--dark {
+  background-color: #000000;
+  border-color: #000000;
+}
+
 .social-icon img {
   width: 14px;
   height: 14px;
 }
 
 .social-icon:hover img {
+  filter: invert(1);
+}
+
+.social-icon--dark:hover {
+  background-color: #FFFFFF;
+}
+
+.social-icon--dark:hover img {
   filter: invert(1);
 }
 

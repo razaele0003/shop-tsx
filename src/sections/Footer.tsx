@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <a href="#" className="social-icon">
                 <img src={iconTwitter} alt="Twitter" />
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className="social-icon social-icon--dark">
                 <img src={iconFacebook} alt="Facebook" />
               </a>
               <a href="#" className="social-icon">
